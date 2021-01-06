@@ -1,0 +1,58 @@
+body {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(240, 216, 216, 0.808);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.polaroid {
+  width: 350px;
+  height: 400px;
+  border: 25px solid #fafafa;
+  border-top-width: 35px;
+  border-bottom-width: 100px;
+  -webkit-box-shadow: 3px 3px 6px 4px #888;
+  -moz-box-shadow: 3px 3px 6px 4px #888;
+  box-shadow: 3px 3px 6px 4px #888;
+  background-image: url("https://cache3.youla.io/files/images/780_780/5e/8d/5e8d9b24074b3e2d371af0b3.jpg");
+  background-size: 350px 400px;
+  order: 1;
+  transition: all 2s ease;
+}
+
+.prev {
+  order: 0;
+}
+
+.next {
+  order: 2;
+}
+
+.btn {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: rgb(218, 235, 64);
+  border-radius: 25px;
+}
